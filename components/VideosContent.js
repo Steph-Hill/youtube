@@ -5,7 +5,7 @@ import { videos } from '../constante/videos'
 
 const VideosContent = () => {
   return (
-    <View style={{backgroundColor:'rgba(108, 223, 244, 0.2)'}}>
+    <View style={{backgroundColor:'rgba(1, 122, 78, 0.3)'}}>
         <Text>Vidéos</Text>
         <FlatList
             data={videos}

@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, ImageBackground } from 'react-native'
 import React from 'react'
 
 const MaxiVideo = ({item}) => {
   return (
-    <View>
-      <Text style={styles.block}>{item.titre}</Text>
-    </View>
+    <ImageBackground style={styles.block}source={item.image}>
+      <Text >{item.titre}</Text>
+    </ImageBackground>
   )
 }
 
@@ -13,9 +13,11 @@ export default MaxiVideo
 
 const styles = StyleSheet.create({
     block:{
-        height:200,
-        backgroundColor:'rgba(108, 223, 244, 0.8)',
-        margin:20,
-        borderRadius:10
+        height:220,
+        margin:10,
+        borderColor:'rgba(0, 174, 58, 1)',
+        borderWidth:2,
+        
+        
     }
 })

@@ -26,7 +26,7 @@ export default Header
 
 const styles = StyleSheet.create({
     header:{
-        height:90,
+        height:40,
         backgroundColor:'rgba(101, 124, 41, 0.5)',
         flexDirection:"row",
         justifyContent:"space-between",
