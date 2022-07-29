@@ -6,15 +6,20 @@ import { SafeAreaProvider } from 'react-native-safe-area-context'
 import  Icone from "react-native-vector-icons/Entypo"
 
 import Icone2 from "react-native-vector-icons/Fontisto"
-const Header = () => {
+
+import Detail from './Detail'
+
+
+const Header = ({navigation}) => {
   return (
     
 
             <View style={styles.header}>
 
                 
-                <Icone name='menu' size={50}/>
-                <Icone2 name='search' size={40}/>
+                <Icone name='menu' size={30}               
+                 onPress={() => navigation.navigate('Detail')}/>
+                <Icone2 name='search' size={25}/>
 
             </View>
 
@@ -26,8 +31,8 @@ export default Header
 
 const styles = StyleSheet.create({
     header:{
-        height:40,
-        backgroundColor:'rgba(101, 124, 41, 0.5)',
+        height:70,
+        backgroundColor:'rgb(239, 211, 69)',
         flexDirection:"row",
         justifyContent:"space-between",
         padding:20,

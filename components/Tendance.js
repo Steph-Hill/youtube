@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
 
     minivideos:{
         height:170,
-        backgroundColor:'rgba(1, 122, 78, 0.4)',
+        backgroundColor:'rgb(130, 149, 75)',
         
         justifyContent:"space-between",
         padding:10,

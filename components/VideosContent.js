@@ -2,15 +2,18 @@ import { StyleSheet, Text, View, FlatList } from 'react-native'
 import React from 'react'
 import MaxiVideo from './cards/MaxiVideo'
 import { videos } from '../constante/videos'
+import Swipe from './Swipe'
 
-const VideosContent = () => {
+const VideosContent = ({navigation}) => {
   return (
-    <View style={{backgroundColor:'rgba(1, 122, 78, 0.3)'}}>
+    <View style={{backgroundColor:'rgb(130, 149, 75)'}}>
         <Text>Vidéos</Text>
         <FlatList
             data={videos}
-            renderItem={({item})=><MaxiVideo item={item}/>}
+            renderItem={({item})=><MaxiVideo navigation={navigation} item={item}/>}
             keyExtractor={item => item.id}
+            
+
         />
     </View>
   )

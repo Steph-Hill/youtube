@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,Te } from 'react-native'
+import { StyleSheet, Text, View,ImageBackground } from 'react-native'
 import React from 'react'
 import {  Card, Button, Icon } from '@rneui/themed';
 
@@ -6,12 +6,12 @@ const MiniCards = ({item}) => {
 
     return (
       <View>
-        <View style={styles.card}>
+        <ImageBackground source={item.image} style={styles.card}>
 
             <Text style={styles.textCard}>{item.titre}</Text>
             
 
-        </View>
+        </ImageBackground>
       </View>
     )
 
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   card:{
     height:120,
     width:300,
-    backgroundColor:'rgba(210, 63, 119, 0.42)',
+    backgroundColor:'rgb(125, 206, 19)',
     marginHorizontal:5,
     borderRadius:5
     
