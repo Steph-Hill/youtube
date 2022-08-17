@@ -17,9 +17,13 @@ const Header = ({navigation}) => {
             <View style={styles.header}>
 
                 
-                <Icone name='menu' size={30}               
-                 onPress={() => navigation.navigate('Detail')}/>
+                <Icone 
+                    name='menu' 
+                    size={30}               
+                    onPress={() => navigation.navigate('Detail')}/>
+                    
                 <Icone2 name='search' size={25}/>
+                
 
             </View>
 

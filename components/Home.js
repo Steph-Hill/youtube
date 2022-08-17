@@ -11,6 +11,7 @@ const Home = ({navigation}) => {
       <Tendance />
       <Content/>
       <VideosContent navigation={navigation}/>
+      
     </View>
   )
 }

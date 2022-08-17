@@ -6,7 +6,13 @@ import Incon2 from 'react-native-vector-icons/MaterialIcons'
 import Detail from '../Detail';
 import Icone3 from 'react-native-vector-icons/AntDesign'
 
-const MaxiVideo = ({item, navigation}) => {
+import { useNavigation } from '@react-navigation/native';
+
+
+
+const MaxiVideo = ({item}) => {
+
+  const navigation = useNavigation();
   return (
     <View style={styles.block}>
       <View style={styles.imagecolor}>
@@ -19,12 +25,24 @@ const MaxiVideo = ({item, navigation}) => {
           <Card.Divider />
         </View>
           <ImageBackground style={{height:200,
-                                    flex: 1,
+                                    flex: 1, 
                                     alignItems:'center',
                                     justifyContent:'center',
-                                    backgroundColor:'rgba(255, 255, 255, 1)'}}source={item.image}>
+                                    backgroundColor:'rgba(255, 255, 255, 1)'}}
+                                    source={item.image}
+                                    >
 
-              <Icone3 name='playcircleo' size={50}  color='rgba(211, 246, 174, 0.7)'/>
+              <Icone3 
+                      name='playcircleo' 
+                      size={70}  
+                      color='rgba(211, 246, 174, 0.7)'
+                      onPress={() => navigation.navigate('Detail',{
+                        item : item
+                        
+                      })} 
+                      
+                      
+                      />
           </ImageBackground>
          {/*  <View style={styles.viewButton}>
 
