@@ -44,8 +44,14 @@ const Detail = ({route}) => {
     <View style={styles.textTitre}>
 
         <Text style={styles.section2}>{item.titre}</Text>
-        <Text style={styles.section2}>{item.date}</Text>
-        <Text style={styles.section2}>{item.category}</Text>
+        <Text style={styles.section3}>Ajouté le : {item.date}</Text>
+
+    </View>
+
+    <View style={styles.textDesc}>
+
+        <Text style={styles.section4} >Description :</Text>
+        <Text style={styles.section5}>{item.description}</Text>
 
     </View>
     
@@ -80,7 +86,7 @@ imagebg:{
 textTitre:{
   
   backgroundColor:'green',
-  height:120,
+  height:150,
   bottom:35,
   borderTopStartRadius:30,
   borderTopEndRadius:30,
@@ -91,9 +97,53 @@ textTitre:{
 },
 
 section2:{
-  padding:20,
+  textAlign:'center',
   fontSize:25,
+  textShadowRadius:10,
+  textShadowColor:'green',
+  color:'white',
+  paddingTop:20
   
+
+},
+section3:{
+  paddingHorizontal:20,
+  top:30,
+  textAlign:'left',
+  fontWeight:'400',
+  color:'white',
+  textShadowRadius:5,
+  textShadowColor:'green',
+  fontSize:16
+  
+},
+
+textDesc:{
+  backgroundColor:'orange',
+  height:350,
+  bottom:35,
+  borderTopStartRadius:30,
+  borderTopEndRadius:30,
+  bottom:70,
+ 
+},
+section4:{
+
+  textAlign:'left',
+  fontSize:23,
+  textShadowRadius:10,
+  textShadowColor:'green',
+  color:'white',
+  padding:20
+},
+section5:{
+  paddingHorizontal:20,
+  fontWeight:'400',
+  color:'white',
+  textShadowRadius:5,
+  textShadowColor:'green',
+  fontSize:19
+ 
 
 }
 
