@@ -11,7 +11,7 @@ const Detail = ({route}) => {
 
   const { item } = route.params;
 
-  console.log(item)
+  
   
  
   return (
@@ -75,9 +75,6 @@ const styles = StyleSheet.create({
 },
 
 imagebg:{
-  
-  
-
 
   height:300
 

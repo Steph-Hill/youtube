@@ -19,8 +19,9 @@ const MaxiVideo = ({item}) => {
           <Card.Title style={{ 
                         fontSize:20,
                         top:2,
+                        textAlign:'left',
                         
-                      color:'rgb(130, 149, 75)', }}
+                      color:'rgba(236, 255, 220, 0.8)', }}
                         >{item.titre}</Card.Title>
           <Card.Divider />
         </View>
@@ -28,7 +29,8 @@ const MaxiVideo = ({item}) => {
                                     flex: 1, 
                                     alignItems:'center',
                                     justifyContent:'center',
-                                    backgroundColor:'rgba(255, 255, 255, 1)'}}
+                                    backgroundColor:'rgba(255, 255, 255, 1)',
+                                  }}
                                     source={item.image}
                                     >
 
@@ -88,12 +90,11 @@ const styles = StyleSheet.create({
 
   block:{
     
-    backgroundColor: 'rgb(239, 211, 69)',
+    backgroundColor: 'rgba(90, 122, 64, 0.8)',
     marginHorizontal:20,
     marginBottom:20,
-    borderRadius:1,
-    borderColor:'rgb(125, 206, 19)',
-    borderWidth:1,
+   
+    
     
     
 

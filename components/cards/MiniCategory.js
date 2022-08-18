@@ -2,23 +2,25 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Button } from "@rneui/themed";
 
-const MiniCategory = ({item, navigation}) => {
+const MiniCategory = ({item}) => {
   return (
     <View>
       <Button
               title={item.titre}
               buttonStyle={{
-                borderColor: 'rgba(41, 76, 4, 1)',
+                borderColor: 'rgba(187, 238, 145, 0.8)',
                 borderWidth:2,
+                borderRadius:15
               }}
               type="outline"
-              titleStyle={{ color: 'rgba(211, 246, 174, 1)' }}
+              titleStyle={{ color:'rgba(187, 238, 145, 1)',
+                            fontSize:19 }}
               containerStyle={{
-                width: 200,
-                height:80,
-                top:1,
-                marginHorizontal: 50,
-                marginVertical: 20,
+                width: 150,
+                height:70,
+                padding:10,
+               
+                
                 
               }}
             />
@@ -31,11 +33,13 @@ export default MiniCategory
 const styles = StyleSheet.create({
 
     textCategoy:{
-        height:20,
+        flex:1,
         backgroundColor:'rgba(243, 245, 39, 0.5)',
-        paddingHorizontal:50,
-        marginTop:5,
-        paddingVertical:10
+        justifyContent:'center',
+        flexDirection:'row',
+        
+        
+        
         
     }
 })

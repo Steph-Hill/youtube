@@ -6,8 +6,8 @@ import Swipe from './Swipe'
 
 const VideosContent = () => {
   return (
-    <View style={{backgroundColor:'rgba(130, 149, 75,0.4)'}}>
-        <Text>Mes Vidéos</Text>
+    <View style={{backgroundColor:'rgba(130, 149, 75,0.8)'}}>
+        <Text style={styles.tendanceText}>Mes Vidéos</Text>
         <FlatList
             data={videos}
             renderItem={({item})=><MaxiVideo  item={item}/>}
@@ -21,4 +21,12 @@ const VideosContent = () => {
 
 export default VideosContent
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+
+  tendanceText:{
+    textAlign:'center',
+    fontSize:19,
+    fontStyle:'normal',
+    fontWeight:'800'
+  }
+})

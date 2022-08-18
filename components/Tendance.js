@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
 
     minivideos:{
         height:170,
-        backgroundColor:'rgba(130, 149, 75,0.4)',
+        backgroundColor:'rgba(130, 149, 75,0.8)',
         
         justifyContent:"space-between",
         padding:10,
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     tendanceText:{
       textAlign:'center',
       fontSize:19,
-      fontStyle:'italic',
+      fontStyle:'normal',
       fontWeight:'800'
     }
 })
