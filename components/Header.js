@@ -10,7 +10,7 @@ import Icone2 from "react-native-vector-icons/Fontisto"
 import Detail from './Detail'
 
 
-const Header = ({navigation}) => {
+const Header = () => {
   return (
     
 
