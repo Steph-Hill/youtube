@@ -5,8 +5,9 @@ import {  Card, Button, Icon } from '@rneui/themed';
 const MiniCards = ({item}) => {
 
     return (
-      <View>
-        <ImageBackground source={item.image} style={styles.card}>
+      <View >
+        <ImageBackground source={item.image} style={styles.card}
+         imageStyle={{ borderRadius: 15}}>
 
             <Text style={styles.textCard}>{item.titre}</Text>
             
@@ -24,17 +25,17 @@ export default MiniCards
 
 const styles = StyleSheet.create({
   card:{
-    height:120,
-    width:300,
+    height:110,
+    width:250,
     backgroundColor:'rgb(125, 206, 19)',
-    marginHorizontal:5,
-    borderRadius:5
+    marginRight:20,
+    borderRadius:50
     
   },
   textCard:{
 
     fontSize:20,
-    color:'white',
+    color:'rgba(187, 238, 145, 1)',
     textAlign:'center',
     backgroundColor:'rgba(7, 7, 7, 0.29)',
     padding:2,

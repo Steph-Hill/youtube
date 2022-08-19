@@ -8,16 +8,17 @@ const MiniCategory = ({item}) => {
       <Button
               title={item.titre}
               buttonStyle={{
-                borderColor: 'rgba(187, 238, 145, 0.8)',
-                borderWidth:2,
-                borderRadius:15
+                
+                borderWidth:0
+               
+               
               }}
               type="outline"
-              titleStyle={{ color:'rgba(187, 238, 145, 1)',
+              titleStyle={{ color:'white',
                             fontSize:19 }}
               containerStyle={{
                 width: 150,
-                height:70,
+                height:80,
                 padding:10,
                
                 

@@ -30,17 +30,21 @@ export default Tendance
 const styles = StyleSheet.create({
 
     minivideos:{
-        height:170,
+        height:180,
         backgroundColor:'rgba(130, 149, 75,0.8)',
         
         justifyContent:"space-between",
-        padding:10,
+        paddingHorizontal:20,
+        
+       
 
     },
     tendanceText:{
       textAlign:'center',
       fontSize:19,
       fontStyle:'normal',
-      fontWeight:'800'
+      fontWeight:'800',
+      padding:10
+      
     }
 })

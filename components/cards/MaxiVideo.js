@@ -20,16 +20,19 @@ const MaxiVideo = ({item}) => {
                         fontSize:20,
                         top:2,
                         textAlign:'left',
-                        
+                        paddingLeft:20,
+                        paddingTop:3,
                       color:'rgba(236, 255, 220, 0.8)', }}
                         >{item.titre}</Card.Title>
           <Card.Divider />
         </View>
-          <ImageBackground style={{height:200,
+          <ImageBackground imageStyle={{ borderBottomRightRadius: 10,
+                                        borderBottomLeftRadius:10}} style={{height:150,
+          
                                     flex: 1, 
                                     alignItems:'center',
                                     justifyContent:'center',
-                                    backgroundColor:'rgba(255, 255, 255, 1)',
+                                    backgroundColor:0,
                                   }}
                                     source={item.image}
                                     >
@@ -93,6 +96,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(90, 122, 64, 0.8)',
     marginHorizontal:20,
     marginBottom:20,
+    borderRadius:10
    
     
     

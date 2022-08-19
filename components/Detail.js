@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import Iconheade from 'react-native-vector-icons/Entypo'
 import VideoDetail from './details/VideoDetail';
+import IconYoutube from 'react-native-vector-icons/Feather'
 
 const Detail = ({route}) => {
 
@@ -21,39 +22,89 @@ const Detail = ({route}) => {
       
       <Iconheade 
         name='chevron-left'
-        size={35}
+        size={55}
         onPress={() => navigation.navigate('Home')}
+        color={'rgba(187, 238, 145, 1)'}
       />
 
           
 
       <Iconheade
         name='chevron-right'
-        size={35}
+        size={55}
+        color={'rgba(187, 238, 145, 1)'}
       />
 
     </View>
         
     <ImageBackground source={item.image}
-                    style={styles.imagebg}
-                    >
+                    style={styles.imagebg}>
+
+
 
 
     </ImageBackground>
+    
 
     <View style={styles.textTitre}>
 
         <Text style={styles.section2}>{item.titre}</Text>
-        <Text style={styles.section3}>Ajouté le : {item.date}</Text>
+        
 
-    </View>
+    
 
     <View style={styles.textDesc}>
 
         <Text style={styles.section4} >Description :</Text>
         <Text style={styles.section5}>{item.description}</Text>
+        </View>
 
+    <View style={styles.iconList}>
+
+      
+        <View  style={styles.cadreIcon}>
+            <IconYoutube
+                  name='thumbs-down'
+                  size={40}
+                  />
+            <Text>J'aime pas!</Text>
+        </View>
+          
+        <View style={styles.cadreIcon}>
+          <IconYoutube
+                name='thumbs-up'
+                size={40}/>
+          <Text >J'aime !</Text>
+        </View>
+          
+        <View style={styles.cadreIcon}>
+          <IconYoutube
+                name='share'
+                size={40}/>
+          <Text>Partager</Text>
+
+        </View>
+          
+        <View style={styles.cadreIcon}>
+          <IconYoutube
+                name='layers'
+                size={40}/>
+          <Text>Playlist</Text>
+        </View>
+          
+        <View style={styles.cadreIcon}>
+          <IconYoutube
+                name='film'
+                size={40}/>
+          <Text>Extrait</Text>
+        </View>
+      
     </View>
+        <Text style={styles.section3}>Ajouté le : {item.date}</Text>
+    </View>
+
+    
+    
     
 </View>
     
@@ -67,10 +118,11 @@ const styles = StyleSheet.create({
 
   header:{
     height:70,
-    backgroundColor:'rgb(239, 211, 69)',
+    backgroundColor:'rgba(25, 54, 1, 0.8)',
     flexDirection:"row",
     justifyContent:"space-between",
-    padding:20,
+    paddingHorizontal:20,
+    paddingTop:10
 
 },
 
@@ -82,11 +134,11 @@ imagebg:{
 
 textTitre:{
   
-  backgroundColor:'green',
-  height:150,
-  bottom:35,
-  borderTopStartRadius:30,
-  borderTopEndRadius:30,
+  backgroundColor:'rgba(90, 122, 64, 1)',
+  height:250,
+  bottom:30,
+  borderTopStartRadius:20,
+  borderTopEndRadius:20,
   
   
   
@@ -96,7 +148,7 @@ textTitre:{
 section2:{
   textAlign:'center',
   fontSize:25,
-  textShadowRadius:10,
+  textShadowRadius:5,
   textShadowColor:'green',
   color:'white',
   paddingTop:20
@@ -105,43 +157,69 @@ section2:{
 },
 section3:{
   paddingHorizontal:20,
-  top:30,
   textAlign:'left',
   fontWeight:'400',
-  color:'white',
-  textShadowRadius:5,
+  color:'rgba(33, 72, 2, 1)',
+  textShadowRadius:2,
   textShadowColor:'green',
-  fontSize:16
+  fontSize:16,
+  bottom:100
   
 },
 
 textDesc:{
-  backgroundColor:'orange',
+  backgroundColor:'rgba(238, 253, 226, 1)',
   height:350,
-  bottom:35,
-  borderTopStartRadius:30,
-  borderTopEndRadius:30,
-  bottom:70,
+  top:20,
+  borderTopStartRadius:20,
+  borderTopEndRadius:20,
+  /* bottom:220 */
  
 },
 section4:{
 
   textAlign:'left',
   fontSize:23,
-  textShadowRadius:10,
+  textShadowRadius:5,
   textShadowColor:'green',
-  color:'white',
+  color:'rgba(33, 72, 2, 1)',
   padding:20
 },
 section5:{
   paddingHorizontal:20,
   fontWeight:'400',
-  color:'white',
-  textShadowRadius:5,
+  color:'rgba(33, 72, 2, 1)',
+  textShadowRadius:2,
   textShadowColor:'green',
   fontSize:19
  
 
+},
+iconList:{
+  /* backgroundColor:'rgba(90, 122, 64, 1)', */
+  /* height:150, */
+ /*  bottom:210, */
+  borderTopWidth:2,
+  borderColor:'white',
+  flexDirection:'row',
+  justifyContent:'space-around',
+  bottom:180,
+  paddingTop:10
+},
+cadreIcon:{
+  
+  flexDirection:'column',
+  
+  height:90,
+  width:90,
+  padding:15,
+  
+
+
+  
+ 
+  
+ 
 }
 
 })

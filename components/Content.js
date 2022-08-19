@@ -25,7 +25,7 @@ export default Content
 const styles = StyleSheet.create({
     content:{
         
-        backgroundColor:'rgba(130, 149, 75,0.8)',
+        backgroundColor:'rgba(90, 122, 64, 1)',
         
     },
    
